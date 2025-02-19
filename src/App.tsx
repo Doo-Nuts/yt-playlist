@@ -27,7 +27,7 @@ function App() {
 
   // 로그인 유지 기능 (토큰 확인)
   useEffect(() => {
-    const token = localStorage.getItem("token");
+    const token = localStorage.getItem("token");   //33333
     if (token) {
       fetch("http://localhost:5000/api/auth/verify", {
         method: "GET",
