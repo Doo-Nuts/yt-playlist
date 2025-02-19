@@ -1,0 +1,66 @@
+.video_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video_list {
+  position: relative;
+  height: 600px;
+  width: 800px;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  border-top: 1px solid #dddddd8f;
+}
+
+.thumbnail {
+  height: 500px;
+  width: 100%;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.thumbnail:hover {
+  opacity: 0.7;
+}
+
+.video_title {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.loading_text {
+  color: gray;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.favorite-btn {
+  position: absolute;
+  margin-top: 10px;
+  z-index: 10;
+  opacity: 0;
+  font-size: 20px;
+  background-color: black;
+  transition: opacity 0.3s ease-in-out;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+/* hover 시 Favorite 버튼 표시 */
+.video_list:hover .favorite-btn,
+.favorite-btn.favorited {
+  opacity: 1;
+}

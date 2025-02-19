@@ -1,0 +1,112 @@
+/* 모달 오버레이 스타일 */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 로그인 모달 스타일 */
+.login-modal {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* 제목 스타일 */
+.login-modal h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.login-modal form {
+  margin-bottom: 20px;
+}
+
+/* 입력 필드 스타일 */
+.login-modal input {
+  width: calc(100% - 20%);
+  padding: 12px;
+  margin: 10px auto;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  
+}
+
+/* 입력 필드 포커스 효과 */
+.login-modal input:focus {
+  border-color: #ff4c4c;
+  outline: none;
+}
+
+/* 버튼 컨테이너 (Sign In & Sign Up 버튼을 나란히 배치) */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+/* 로그인 버튼 (Sign In) */
+.submit-btn {
+  flex: 1;
+  margin-right: 10px;
+  padding: 12px;
+  background-color: #ff4c4c;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: #e03c3c;
+}
+
+/* 회원가입 버튼 (Sign Up) */
+.register-btn {
+  flex: 1;
+  padding: 12px;
+  background-color: #444;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.register-btn:hover {
+  background-color: #666;
+}
+
+/* 에러 메시지 스타일 */
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* 닫기 버튼 스타일 */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
